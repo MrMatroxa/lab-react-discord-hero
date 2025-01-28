@@ -1,0 +1,95 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  width: 40%;
+  text-align: left;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  width: 40%;
+  text-align: left;
+}
+
+nav img {
+  width: auto;
+  height: 2em;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+#buttons :first-child {
+  margin-bottom: 1em;
+}
+
+#buttons :last-child {
+  color: white;
+  background-color: rgb(35,39,42);
+}
+
+#background-image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  position: relative;
+  top: -7em;
+  z-index: 0;
+}
